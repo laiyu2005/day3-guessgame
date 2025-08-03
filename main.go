@@ -59,12 +59,11 @@ func main() {
 	playRound()
 
 	// 可选：添加多局游戏支持（用户输入y继续，否则退出）
-	/*
-		var again string
-		fmt.Print("再玩一局？(y/n)：")
-		fmt.Scan(&again)
-		if again == "y" || again == "Y" {
-			playRound()
-		}
-	*/
+
+	var again string
+	fmt.Print("再玩一局？(y/n):")
+	fmt.Scan(&again)
+	if again == "y" || again == "Y" {
+		playRound()
+	}
 }
